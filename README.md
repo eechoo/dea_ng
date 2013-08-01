@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/cloudfoundry/dea_ng.png)](https://travis-ci.org/cloudfoundry/dea_ng)
-[![Code Climate](https://codeclimate.com/github/cloudfoundry/dea_ng.png)](https://codeclimate.com/github/cloudfoundry/dea_ng)
+[![Build Status](https://travis-ci.org/X-Plat/dea_ng.png)](https://travis-ci.org/X-Plat/dea_ng)
 
 # dea_ng
 
