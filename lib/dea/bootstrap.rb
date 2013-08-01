@@ -503,11 +503,6 @@ module Dea
       instance = create_instance(data)
       return unless instance
 
-      if config.only_production_apps? && !instance.production_app?
-        logger.info("Ignoring instance for non-production app: #{instance}")
-        return
-      end
-
       instance.start
     end
 
@@ -554,14 +549,6 @@ module Dea
       end
 
       nil
-    end
-
-    def handle_droplet_status(message)
-      instance_registry.each do |instance|
-        next unless instance.starting? || instance.running?
-        resp = Dea::Protocol::V1::DropletStatusResponse.generate(instance)
-        message.respond(resp)
-      end
     end
 
     def evacuating?
