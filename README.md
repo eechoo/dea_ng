@@ -3,7 +3,7 @@
 # dea_ng
 
 This repository contains the code for the Droplet Execution Agent (DEA)
-and related components.
+and related components..
 
 ## Components
 
